@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { Menu, X } from 'lucide-react';
 import { rubik } from '@/app/ui/fonts';
 
+
 const NavBar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -12,9 +13,9 @@ const NavBar = () => {
     };
 
     return (
-        <nav className={`${rubik.className}`}>
+        <nav className={`${rubik.className} relative z-50`}>
 
-            <div className="flex justify-between items-center px-4 md:px-8 h-[80px] border-2 border-gray-200">
+            <div className="flex justify-between items-center px-4 md:px-7 h-[80px] border-2 border-gray-200">
                 <button
                     className="md:hidden p-2"
                     onClick={toggleMenu}
