@@ -32,9 +32,9 @@ const NavBar = () => {
                         <li><a href="/services" className="hover:text-gray-600">Services</a></li>
                     </ul>
                     <Image
-                        src="/connect.jpg"
-                        width={130}
-                        height={100}
+                        src="/companylogo.png"
+                        width={150}
+                        height={130}
                         className="hidden md:block"
                         alt="Screenshots of the dashboard project showing desktop version"
                     />

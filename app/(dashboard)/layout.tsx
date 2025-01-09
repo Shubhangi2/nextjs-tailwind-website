@@ -1,10 +1,12 @@
 import NavBar from "@/components/navbar"
+import Footer from "@/components/footer"
 
 export default function Layout({children}: {children: React.ReactNode}) {
     return (
-        <section>
+        <div className="flex flex-col min-h-screen">
             <NavBar/>
-            <main>{children}</main>
-        </section>
+            <main className="flex-grow">{children}</main>
+            <Footer/>
+        </div>
     );
 }
