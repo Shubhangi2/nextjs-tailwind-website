@@ -9,7 +9,7 @@ const Form = () => {
 
 
     return (
-        <div className='w-[70%] xl:w-[60%] flex flex-col lg:flex-row m-auto border-[2px] border-gray-100 rounded-2xl my-8'>
+        <div className='w-[90%] xl:w-[60%] flex flex-col lg:flex-row m-auto border-[2px] border-gray-100 rounded-2xl my-8'>
             <div className='flex-1 bg-gray-50'>
                 <div className='flex flex-col '>
                     <div className='m-6 space-y-2'>
@@ -28,8 +28,8 @@ const Form = () => {
                     <input className='p-2 border-[1px] rounded-md ' type='text' placeholder='Mobile number' />
                     <input className='p-2 border-[1px] rounded-md ' type='text' placeholder='Email address' />
 
-                    <div className="flex items-center gap-2">
-                        <span className="text-sm text-gray-600">I am a</span>
+                    <div className="flex flex-col md:flex-row  md:items-center gap-2">
+                        <span className="text-sm text-gray-600 px-3">I am a</span>
                         <div className="flex gap-2 rounded-full p-1">
                             {roles.map((role) => (
                                 <label
@@ -57,11 +57,11 @@ const Form = () => {
                             ))}
                         </div>
                     </div>
-                    <div className='flex  '>
+                    <div className='flex flex-col md:flex-row '>
                         <button className='px-4 py-2 border-[1px] border-gray-200 rounded-3xl bg-green-600 text-white' type='submit'>Request consultation</button>
-                        <div className='border-l-2 border-gray-400 mx-4 my-2 px-4'>
-                            <span className='text-lg text-gray-600 font-bold'>Call Us</span>
-                            <span>+919702214239</span>
+                        <div className='border-l-2 border-gray-400 mx-4 my-2 px-4 flex-col md:flex-row'>
+                            <p className='text-sm md:text-lg text-gray-600 font-bold'>Call Us</p>
+                            <p className='text-sm '>+919702214239</p>
                         </div>
                     </div>
 
