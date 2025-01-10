@@ -3,6 +3,7 @@ import TopProjects from '../../ui/home/components/top_projects';
 import TopProjectCards from '../../ui/home/components/top_project_card';
 import {TopProjectInterface} from './types/top_project_interface';
 import ExclusiveCards from '@/app/ui/home/components/exclusive_cards';
+import Form from '@/app/ui/home/components/form';
 export default function Page() {
   
     return (
@@ -42,6 +43,7 @@ export default function Page() {
 
             <TopProjectCards/>
             <ExclusiveCards/>
+            <Form/>
         </section>
     );
 }
