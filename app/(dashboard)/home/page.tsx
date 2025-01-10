@@ -1,7 +1,8 @@
 import { MapPin, Search, LocateFixed, SlidersHorizontal } from 'lucide-react';
-import TopProjects from './components/top_projects';
-import TopProjectCards from './components/top_project_card';
+import TopProjects from '../../ui/home/components/top_projects';
+import TopProjectCards from '../../ui/home/components/top_project_card';
 import {TopProjectInterface} from './types/top_project_interface';
+import ExclusiveCards from '@/app/ui/home/components/exclusive_cards';
 export default function Page() {
   
     return (
@@ -40,6 +41,7 @@ export default function Page() {
             {/* <TopProjects/> */}
 
             <TopProjectCards/>
+            <ExclusiveCards/>
         </section>
     );
 }

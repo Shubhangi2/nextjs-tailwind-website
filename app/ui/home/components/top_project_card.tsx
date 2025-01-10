@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { TopProjectInterface } from '../types/top_project_interface';
+import { TopProjectInterface } from '../../../(dashboard)/home/types/top_project_interface';
 import TopProjects from './top_projects';
 
 const TopProjectCards = () => {
