@@ -22,6 +22,7 @@ interface Property {
 const PropertyListings = () => {
   // Sample data - in real app, this would come from API
   const properties: Property[] = [
+   
     {
       id: '1',
       title: 'Pardos Okas Resid',
@@ -56,6 +57,53 @@ const PropertyListings = () => {
     },
     {
       id: '3',
+      title: 'Buildia Galaxy',
+      location: {
+        area: 'Kursi Road',
+        city: 'Lucknow'
+      },
+      configurations: '1 BHK Flat',
+      builtUpArea: 'On request',
+      carpetArea: '543 Sq.ft.',
+      price: {
+        total: '1.69 Cr',
+        perSqFt: '31.1 K'
+      }
+    },
+    {
+      id: '4',
+      title: 'Pardos Okas Resid',
+      location: {
+        area: 'Sushant Golf City',
+        city: 'Lucknow'
+      },
+      configurations: '2 & 3 BHK Flat',
+      builtUpArea: 'On request',
+      carpetArea: '862 - 1,159 Sq.ft.',
+      price: {
+        total: '80.08 Lacs',
+        perSqFt: '9.29 K'
+      },
+      trending: true
+    },
+    {
+      id: '5',
+      title: 'Rishita Mulberry H',
+      location: {
+        area: 'Sushant Golf City',
+        city: 'Lucknow'
+      },
+      configurations: '2 & 3 BHK Apartment',
+      builtUpArea: 'On request',
+      carpetArea: '1,328 - 2,230 Sq.ft.',
+      price: {
+        total: '94.29 Lacs',
+        perSqFt: '7.1 K'
+      },
+      trending: true
+    },
+    {
+      id: '6',
       title: 'Buildia Galaxy',
       location: {
         area: 'Kursi Road',

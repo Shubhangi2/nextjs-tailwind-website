@@ -27,7 +27,7 @@ const PropertyCard = ({
     return (
         <div className="w-full rounded-lg bg-white shadow-md overflow-hidden">
             <div className="relative ">
-                <div className="relative w-full h-[200px] overflow-hidden">
+                <div className="relative w-full h-[200px]">
                     <Image
                         src={`${imageUrl}`}
                         alt={`${title} property`}

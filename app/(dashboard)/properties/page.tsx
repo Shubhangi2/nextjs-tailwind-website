@@ -9,7 +9,7 @@ import { useState } from "react";
 
 export default function Page() {
     const [isOpen, setIsOpen] = useState(false)
-    const [selectedCity, setSelectedCity] = useState('');
+    const [selectedCity, setSelectedCity] = useState('Mumbai');
 
 
     return (
