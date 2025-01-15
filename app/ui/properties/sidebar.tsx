@@ -37,7 +37,6 @@ const FilterSection: React.FC<FilterSectionProps> = ({
             <h3 className="font-medium">{title}</h3>
         </div>
         {options.map(option => (
-
             <label key={option} className="flex items-center gap-2 mb-2 cursor-pointer">
                 <input
                     type="checkbox"
@@ -47,8 +46,6 @@ const FilterSection: React.FC<FilterSectionProps> = ({
                 />
                 <span className="text-sm">{option}</span>
             </label>
-
-
         ))}
     </div>
 );
@@ -141,7 +138,7 @@ const FilterSidebar: React.FC = () => {
         ];
 
     return (
-        <div className="w-72 bg-white p-4 shadow-md border-[1px] border-gray-200">
+        <div className="w-72 bg-white p-4 shadow-md border-[1px]  border-gray-200">
             {/* Header with selected filters */}
             <div className="mb-4">
                 <div className="flex justify-between items-center mb-3">

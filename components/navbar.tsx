@@ -15,7 +15,7 @@ const NavBar = () => {
     return (
         <nav className={`${rubik.className} z-50 sticky top-0 bg-white `}>
 
-            <div className="flex justify-between items-center px-4 md:px-7 h-[80px] border-2 border-gray-200">
+            <div className="flex justify-between items-center px-4 md:px-7 h-[80px] border-[1px] border-gray-200">
                 <button
                     className="md:hidden p-2"
                     onClick={toggleMenu}
