@@ -138,7 +138,7 @@ const FilterSidebar: React.FC = () => {
         ];
 
     return (
-        <div className="w-72 bg-white p-4 shadow-md border-[1px]  border-gray-200">
+        <div className="w-72 bg-white p-4 shadow-md border-[1px] h-[100vh] border-gray-200 overflow-y-scroll">
             {/* Header with selected filters */}
             <div className="mb-4">
                 <div className="flex justify-between items-center mb-3">
