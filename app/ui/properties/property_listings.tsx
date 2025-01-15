@@ -144,6 +144,7 @@ const PropertyListings = () => {
         {properties.map((property) => (
           <PropertyCard
             key={property.id}
+            id={property.id}
             title={property.title}
             location={`${property.location.area}, ${property.location.city}`}
             configurations={property.configurations}

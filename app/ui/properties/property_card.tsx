@@ -1,6 +1,7 @@
 import { Heart } from 'lucide-react';
 import Image from 'next/image';
 interface PropertyCardProps {
+    id:string
     title: string;
     location: string;
     configurations: string;
@@ -15,6 +16,7 @@ interface PropertyCardProps {
 }
 
 const PropertyCard = ({
+    id,
     title,
     location,
     configurations,
@@ -24,10 +26,15 @@ const PropertyCard = ({
     imageUrl = "/images/comp2.png",
     trending = false,
 }: PropertyCardProps) => {
+
+    const openUrlNewTab = ()=>{
+        window.open(`http://localhost:3000/properties/${id}`, '_blank');
+    }
+
     return (
-        <div className="w-full rounded-lg bg-white shadow-md overflow-hidden">
+        <div className="w-full rounded-lg bg-white shadow-md hover:cursor-pointer" onClick={()=>openUrlNewTab()}>
             <div className="relative ">
-                <div className="relative w-full h-[200px]">
+                <div className="relative w-full h-[200px]  overflow-hidden ">
                     <Image
                         src={`${imageUrl}`}
                         alt={`${title} property`}
