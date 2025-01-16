@@ -156,17 +156,7 @@ const PropertyListings = () => {
         ))}
       </div>
 
-      {/* Navigation Arrows */}
-      {/* <div className="fixed top-1/2 transform -translate-y-1/2 w-full left-0 pointer-events-none">
-        <div className="container mx-auto px-4 flex justify-between">
-          <button className="pointer-events-auto bg-white rounded-full p-2 shadow-lg hover:bg-gray-50">
-            <ChevronLeft className="h-6 w-6" />
-          </button>
-          <button className="pointer-events-auto bg-white rounded-full p-2 shadow-lg hover:bg-gray-50">
-            <ChevronRight className="h-6 w-6" />
-          </button>
-        </div>
-      </div> */}
+
     </div>
   );
 };
