@@ -145,6 +145,7 @@ const FilterSidebar: React.FC = () => {
                     <h2 className="text-lg font-medium">Filters</h2>
                     {Object.keys(selectedFilters).length > 0 && (
                         <p
+
                             onClick={resetFilters}
                             className="hover:text-orange-600 text-orange-500 text-sm transition-colors duration-200"
                         >
@@ -174,7 +175,7 @@ const FilterSidebar: React.FC = () => {
             </div>
 
             {filterSections.map(section => (
-                <div className='border-b-2 mb-5 border-gray-200'>
+                <div key={section.category} className='border-b-2 mb-5 border-gray-200'>
                     <FilterSection
                         key={section.category}
                         title={section.title}

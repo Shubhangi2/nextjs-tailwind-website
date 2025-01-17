@@ -157,6 +157,7 @@ const PropertyListings = () => {
       </div>
 
 
+
     </div>
   );
 };
