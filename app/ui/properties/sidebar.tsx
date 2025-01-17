@@ -1,3 +1,5 @@
+
+"use client"
 import React, { useState } from 'react';
 import { X, Home, Wallet, Building, Key, User, Clock, Package, LucideIcon } from 'lucide-react';
 

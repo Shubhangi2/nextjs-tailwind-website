@@ -1,3 +1,5 @@
+"use client"
+
 import { MapPin, Filter, SlidersHorizontal, ListFilter } from "lucide-react"
 import SearchBar from "@/app/ui/properties/searchbar";
 import CitySelector from "./city_selector";
